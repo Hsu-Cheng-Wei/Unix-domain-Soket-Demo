@@ -59,12 +59,7 @@ int main(void)
                 break;  
             }  
               
-            printf("received: %s", buf);  
- 
-            for(i = 0; i < n; i++) {  
-                buf[i] = toupper(buf[i]);  
-            }  
-            write(connfd, buf, n);  
+            printf("received: %s", buf);
         }  
         close(connfd);  
     }  
